@@ -1,15 +1,15 @@
 export default function EventLayout({
   children,
-  modal,
+  session,
 }: {
   children: React.ReactNode;
-  modal: React.ReactNode;
+  session: React.ReactNode;
 }) {
   return (
     <div>
       {children}
       ----
-      {modal}
+      {session}
     </div>
   );
 }

@@ -8,7 +8,6 @@ interface EventPageProps {
 
 export default async function EventPage({ params }: EventPageProps) {
   const { eventSlug } = await params;
-  console.log("🚀 ~ EventPage ~ eventSlug:", eventSlug);
   return (
     <div>
       <h1>Event: {eventSlug}</h1>

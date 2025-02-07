@@ -12,6 +12,7 @@ const SessionModalPage: FC<SessionModalPageProps> = async ({ params }) => {
   const { sessionSlug, eventSlug } = await params;
   return (
     <div className="">
+      {eventSlug}
       <Session sessionSlug={sessionSlug} eventSlug={eventSlug} />
     </div>
   );

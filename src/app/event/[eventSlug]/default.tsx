@@ -1,3 +1,1 @@
-export default function Default() {
-  return null;
-}
+export default await import("./page").then((mod) => mod.default);
