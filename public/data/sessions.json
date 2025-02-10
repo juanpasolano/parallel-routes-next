@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Session 1",
+    "slug": "session-1",
+    "description": "Session 1 description"
+  },
+  {
+    "id": "2",
+    "name": "Session 2",
+    "slug": "session-2",
+    "description": "Session 2 description"
+  },
+  {
+    "id": "3",
+    "name": "Session 3",
+    "slug": "session-3",
+    "description": "Session 3 description"
+  }
+]
