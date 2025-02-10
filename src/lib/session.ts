@@ -1,7 +1,9 @@
 import { z } from "zod";
 
 const fetchJson = async (path: string) => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_URL}${path}`);
+  const protocol = process.env.VERCEL ? "https" : "http";
+  console.log(`${protocol}://${process.env.VERCEL_URL}${path}`);
+  const response = await fetch(`${protocol}://${process.env.VERCEL_PROJECT_PRODUCTION_URL}${path}`);
   const json = await response.json();
   const data = sessionSchema.parse(json);
   return data;

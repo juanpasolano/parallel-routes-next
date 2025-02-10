@@ -10,7 +10,6 @@ interface EventPageProps {
 export default async function EventPage({ params }: EventPageProps) {
   const { eventSlug } = await params;
   const sessions = await getSessions();
-
   return (
     <div>
       <h1>Event: {eventSlug}</h1>
